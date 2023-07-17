@@ -256,8 +256,75 @@ button {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
 }
-.site-footer {
+footer {
   display: flex;
   width: 100%;
   height: 5rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .header-content {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+  }
+
+  .space-before-us {
+    height: 5rem;
+  }
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .logo-body {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+  .space-before-us {
+    height: 15rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .where-content p {
+    font-size: 1.5rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+  
+  
+  
+  nav ul li {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+  
+  .space-before-us {
+    height: 11rem;
+  }
+
+  .space-before-gallery {
+    display: none;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+  .where-content p {
+    font-size: 1rem;
+  }
 }

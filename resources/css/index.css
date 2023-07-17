@@ -142,7 +142,7 @@ nav ul li {
   justify-content: center;
   width: 100%;
 }
-button {
+.button {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -152,6 +152,9 @@ button {
   font-family: 'Ubuntu', sans-serif;
   margin: 2rem;
   border-radius: 15px;
+}
+.button:hover {
+  background-color: #1F4159;
 }
 
 .space-before-us {

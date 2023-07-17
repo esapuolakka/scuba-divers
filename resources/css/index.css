@@ -1,0 +1,263 @@
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Pangolin', cursive;
+font-family: 'Ubuntu', sans-serif;*/
+
+
+html, body {
+    font-size: 16px;
+    background-color: #1F4159;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #1F4159;
+  letter-spacing: .5rem;
+}
+h2 {
+  font-family: 'Pangolin', sans-serif;
+  color: #4CAF50;
+  font-size: 2rem;
+}
+h3 {
+  font-family: 'Pangolin', sans-serif;
+  font-size: 4rem;
+  color:#f7f7f7;
+}
+
+/* Header section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #5CD2E6;
+    z-index: 3;
+    
+}
+.header-content {
+    letter-spacing: .2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.logo-container {
+    display: inline-flex;
+    width: 100%;
+    margin-left: 1rem;
+    align-items: center;
+}
+.logo-s {
+    border: 1px solid #f7f7f7;
+    padding: .3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+    align-content: center;
+    width: 100%;
+    
+}
+nav ul li {
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Banner */
+
+.background {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.big-image-container {
+    display: flex;
+    width: 100%;
+  }
+.big-image-container img {
+    width: 100%;
+}
+.space-before-welcome {
+  display: flex;
+  position: relative;
+  top: 5rem;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  position: relative;
+  top: 5rem;
+}
+
+.welcome-content {
+  width: 80%;
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #1F4159;
+  background-color: rgba(92, 210, 230, 0.5);
+  border-radius: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+.space-before-us {
+  display: flex;
+  height: 30rem;
+}
+
+.us-section {
+  width: 80%;
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #1F4159;
+  background-color: rgba(92, 210, 230, 0.7);
+  border-radius: 15px;
+}
+.text-container {
+  width: 92%;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+  color: #1F4159;
+}
+.space-before-gallery {
+  display: flex;
+  height: 5.5rem;
+}
+.offset {
+  height: 5rem;
+}
+
+.gallery {
+  width: 100%;
+}
+.gallery-content {
+  background-color: white;
+  width: 70%;
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: stretch;
+  align-items: stretch;
+  border: 2px solid white;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-a {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.image-b {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.image-c {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.image-d {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.image-a img,
+.image-b img,
+.image-c img,
+.image-d img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.space-before-where {
+  background-color: #5CD2E6;
+  height: 5rem;
+  left: 0;
+}
+
+.where {
+  display: flex;
+  background-image: url(../images/bahamas.jpeg);
+  width: 100%;
+  height: 42rem;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.where-content {
+  text-align: center;
+  background-color: #5CD2E6;
+  padding: 2rem;
+}
+.where-content p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+}
+.site-footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+}

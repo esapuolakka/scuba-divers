@@ -1,1 +1,1 @@
-# scuba-divers
+# scuba-diving-club
